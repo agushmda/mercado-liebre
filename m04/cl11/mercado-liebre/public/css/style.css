@@ -22,6 +22,7 @@ Descripciones: 16px */
 
 body {
     background-color: #ebebeb;
+    margin: 0px;
 }
 
 header {
@@ -97,4 +98,5 @@ h3 {
 .footer i{
     font-size: 2em;
     margin-bottom: 10px;
+    color: #03264C;
 }
