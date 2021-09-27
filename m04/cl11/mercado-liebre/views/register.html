@@ -15,10 +15,12 @@
                 <div class="logo"> 
                     <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
                 </div>
-                <form action="search" class="form-search">
-                    <input type="text" name="search" placeholder="Buscar productos, marcas y más">
-                    <i class="fas fa-search"></i>
-                </form>
+                <div class="form" action="#" method="GET">
+                    <div class="search-bar">
+                        <input placeholder="Buscar productos, marcas y más"></input>
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
                 <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
             <nav>
@@ -43,17 +45,15 @@
             <form action="/register" method="POST" enctype="multipart/form-data"><!--Enctype se agrega solo si tenemos input de tipo file-->
                 
                 <div class="form-control">
-                    <label for="">Nombre y apellido</label>
-                    <input type="text" name="fullname">
+                    <input placeholder="Nombre y apellido" type="text" name="fullname">
                 </div>
 
                 <div class="form-control">
-                    <label for="">Email</label>
-                    <input type="email" name="email">
+                    <input placeholder="Email" type="email" name="email">
                 </div>
 
+                <h4>Fecha de nacimiento</h4>
                 <div class="form-control">
-                    <label for="">Fecha de nacimiento</label>
                     <input type="date" name="">
                 </div>
 
@@ -66,16 +66,15 @@
                     </select>
                 </div>
 
+                <h4>Categorias de interes</h4>
                 <div class="form-control">
-                    <h4>Categorias de interes</h4>
-                    <input type="checkbox" name="interes" value="Electro" id="electro">
-                    <label for="electro">Electro</label>
+                    <div class="categorias-de-interes">
+                    <label for="electro"><input type="checkbox" name="interes" value="Electro" id="electro">Electro</label>
 
-                    <input type="checkbox" name="interes" value="Moda" id="moda">
-                    <label for="moda">Moda</label>
+                    <label for="moda"><input type="checkbox" name="interes" value="Moda" id="moda">Moda</label>
 
-                    <input type="checkbox" name="interes" value="healthy" id="healthy">
-                    <label for="healthy">Vida sana</label>
+                    <label for="healthy"><input type="checkbox" name="interes" value="healthy" id="healthy">Vida sana</label>
+                    </div>
                 </div>
 
                 <div class="form-control">
@@ -84,22 +83,49 @@
                 </div>
 
                 <div class="form-control">
-                    <label for="">Contraseña</label>
-                    <input type="password" name="password">
+                    <input placeholder="Contraseña" type="password" name="password">
                 </div>
 
                 <div class="form-control">
-                    <label for="">Repetir Contraseña</label>
-                    <input type="password" name="repassword">
+                    <input placeholder="Repetir contraseña" type="password" name="repassword">
                 </div>
 
+                <div class="enviar-login">
                 <button type="submit" class="enviar">Registrate</button>
+                </div>
+                <div class="enviar-login">
                 <button type="reset" class="borrar">Borrar</button>
+                </div>
             </form>
         </main>
 
         <footer>
-            &copy
+            <section class="footer">
+                <div class="footer-info">
+                    <div>
+                        <i class="fas fa-credit-card"></i>
+                        <h4>Pagá con tarjeta o en efectivo</h4>
+                        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-gift"></i>
+                        <h4>Envío gratis desde $2.500</h4>
+                        <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                            productos. Es un beneficio de Mercado Puntos.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fas fa-user-shield"></i>
+                        <h4>Seguridad, de principio a fin</h4>
+                        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                            porque estás siempre protegid@.
+                        </p>
+                    </div>
+                </div>    
+                <div class="copyright">Copyright &copy 1999-2020 MercadoLiebre S.R.L.</div>
+            </section>
         </footer>
         
     </body>
